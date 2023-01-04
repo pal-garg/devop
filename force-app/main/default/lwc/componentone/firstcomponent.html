@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Template One">
+        <div>
+            This is template one.
+            <lightning-input type="checkbox" label="show details" onchange={handlechange}></lightning-input>
+        <template if:true={areDetailsvisible}>
+            <div>show the details</div>
+        </template>
+        </div>
+        
+        <p class="margin-vertical-small">
+            <lightning-button label="Switch Templates" 
+                onclick={switchTemplate}>
+            </lightning-button> 
+        </p>
+    </lightning-card>   
+</template>
